@@ -1,4 +1,4 @@
-# Colloquium: Investigating of sirtuins with novel computational techniques
+# Colloquium: Investigating sirtuins with novel computational techniques
 
 This is a project for my master study LST. 
 
