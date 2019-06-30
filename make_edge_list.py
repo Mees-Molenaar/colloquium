@@ -23,7 +23,6 @@ with open('proteins_22-6-19.csv') as csv_file:
         if line_count == 0:
             line_count += 1
         else:
-            line_count += 1
             # Add items to a dictionary so you get a dictionary with article ids as key and a list of protein as value
             if row[0] in article_proteins.keys():
                 article_proteins[row[0]].add(row[2])
@@ -31,15 +30,31 @@ with open('proteins_22-6-19.csv') as csv_file:
                 article_proteins[row[0]] = {row[2]}
 
 # Iterate over the article ids and create a an edge list of tuple with pairs of proteins
+amount_to_many = 0
+amount_used = 0
 for x in article_proteins:
     for protein in article_proteins[x]:
         temp_list = article_proteins[x]
-        for y in temp_list:
-            if y != protein:
-                edge.append((protein, y))
+        interactions_set = set()
+        threshold = 100
+        if(len(temp_list) < threshold):
+            for y in temp_list:
+                if y != protein:
+                    interaction = (protein, y)
+                    interactions_set.add(interaction)
+
+            amount_used += 1
+
+        else:
+            amount_to_many += 1
+
+        edge.append(interactions_set)
+
+print(
+    f'Treshold of {threshold} results in {amount_used} used and {amount_to_many} not used articles')
 
 # Write the edge list to a csv file
 with open(filename, 'w') as out_file:
     csv_out = csv.writer(out_file)
     for i in edge:
-        csv_out.writerow(i)
+        csv_out.writerows(i)
