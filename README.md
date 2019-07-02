@@ -19,3 +19,7 @@ This script now also includes the thresholds!
 > edge_list20190701.csv
 
 This is the csv file containing the edge list. And this file is used to make a network via cytoscape.
+
+> introduction.docx
+
+Currently, this document contains ideas of the contents of the introduction that I want to work out.
