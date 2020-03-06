@@ -1,25 +1,15 @@
-# Colloquium: Investigating sirtuins using novel computational techniques
+# Colloquium: Investigating Sirtuins in Alzheimer's Disease using novel computational techniques
 
 This is a project for my master study LST. 
 
-> Europe PMC searchPublications and getAnnotations for Proteins V3.knwf
+> protein_list_20200217.csv
 
-This is the knime workflow I use to obtain all the proteins. This list contains the article ID, the uniprot link to the protein and the abbreviated name.
+This csv file contains the protein list that was retreived using the Jupyter Notebook. Unfortunately, the created edge-list was to large to upload to Github. However, you can easely use this list of proteins to create the edge-list yourself.
 
-> proteins_22-6-19.csv
+> europepmc_edge_list.ipynb
 
-This is a list made with the knime workflow and used for the python file that makes an edge list.
+This is the Jupyter Notebook that was used to retrieve the proteins from the EuropePMC database. Additionally, with this protein list the edge-list was created.
 
-> make_edge_list.py
+> Literature_Review_Mees_final.pdf
 
-This is a python script that makes an edge-list of the protein list obtained by the knime workflow.
-Probably, this is not the best written script and there is option for optimization. But it works.
-This script now also includes the thresholds!
-
-> edge_list20190701.csv
-
-This is the csv file containing the edge list. And this file is used to make a network via cytoscape.
-
-> introduction.docx
-
-Currently, this document contains ideas of the contents of the introduction that I want to work out.
+Final version of the complete report.
