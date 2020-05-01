@@ -25,7 +25,7 @@ This csv file contains the protein list that was retreived using the Jupyter Not
 
 This is the Jupyter Notebook that was used to retrieve the proteins from the EuropePMC database. Additionally, with this protein list the edge-list was created.
 
-The Notebook is largely based on Dr Magnus Palmblad's KNIME workflow, which can be reviewed [here](https://github.com/magnuspalmblad/EuropePMC2ChEBI).
+The Notebook is largely based on Dr Palmblad's KNIME workflow, which can be reviewed [here](https://github.com/magnuspalmblad/EuropePMC2ChEBI).
 
 > Literature_Review_Mees_final.pdf
 
