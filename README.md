@@ -1,6 +1,6 @@
 # Colloquium: Investigating Sirtuins in Alzheimer's Disease using novel computational techniques
 
-This is a project was used as my colloquim for the Master Life Science and Technology at Leiden University.
+This project consists of my colloquim for the Master Life Science and Technology at Leiden University.
 
 ### Abstract
 The most prevalent neurodegenerative disease is Alzheimer’s Disease (AD). No breakthrough
